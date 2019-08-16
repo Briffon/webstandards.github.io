@@ -41,7 +41,7 @@ if(aboutSection){
     let about=''
         about+='<p>'+data.about.copy+'</p>';
         about+='<blockquote>'+data.about.quote+'</blockquote>';
-        
+
 //members
         for(let x=0;x<data.members.length;x++){
             about+='<img src="'+data.members[x].imageURL+'" alt ="'+data.members[x].firstname+' '+data.members[x].lastname+'">'
