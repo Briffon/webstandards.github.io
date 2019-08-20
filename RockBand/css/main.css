@@ -95,10 +95,11 @@ body > section:nth-of-type(even) h2 {
 }
 
 #about article{
-    width: calc(100%*2/3);
+    width: calc(100%*2/4);
     float: left;
     /* padding: 10px;  */
     padding-right: 20px;
+    margin:1%;
 }
 
 #about section{
@@ -108,8 +109,13 @@ body > section:nth-of-type(even) h2 {
 }
 
 #about section img {
-    width: 50%;
+    width: 49%;
     display: inline-block;
+    padding:1%; 
+}
+
+#about blockquote{
+    font-weight: bold;
 }
 
 footer {

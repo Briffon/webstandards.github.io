@@ -40,8 +40,8 @@ let eventsSection = document.querySelector('#events h4');
 let aboutSection = document.querySelector("#about h3")
 if(aboutSection){
     let about=''
-        about+='<p>'+data.about.copy+'</p>';
         about+='<blockquote>'+data.about.quote+'</blockquote>';
+        about+='<p>'+data.about.copy+'</p>';
         aboutSection.insertAdjacentHTML('afterend',about);
 }
 //members
