@@ -25,10 +25,11 @@ if(newsArticles){
 let eventsSection = document.querySelector('#events h4');
 	if(eventsSection){
 		
-		let events = '';
+        let events = '';
+        let months=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']
 		for(x= 0; x < data.events.length; x++){
 			events += '<article>';
-            events += '<p><time datetime="' + data.events[x].date + '">' +data.events[x].date  + '</time></p>';
+            events += '<p><time datetime="' + data.events[x].date + '">' + new Date(data.events[x].date).getDate() +" "+ months[new Date(data.events[x].date).getMonth()] + '</time></p>';
             events += '<p>'+data.events[x].venue+'</p>';
             events += '<h3>' + data.events[x].city + ', ' + data.events[x].state + '</h3>';
 			events += '</article>';
@@ -41,13 +42,21 @@ if(aboutSection){
     let about=''
         about+='<p>'+data.about.copy+'</p>';
         about+='<blockquote>'+data.about.quote+'</blockquote>';
-
-//members
-        for(let x=0;x<data.members.length;x++){
-            about+='<img src="'+data.members[x].imageURL+'" alt ="'+data.members[x].firstname+' '+data.members[x].lastname+'">'
-            about+='<h4>'+data.members[x].firstname+" "+data.members[x].lastname+'</h4>';
-        }
         aboutSection.insertAdjacentHTML('afterend',about);
+}
+//members
+let memberSection=document.querySelector("#members h1")
+if(memberSection){
+let members='';
+
+        for(let x=0;x<data.members.length;x++){
+            
+            members+='<img src="'+data.members[x].imageURL+'" alt ="'+data.members[x].firstname+' '+data.members[x].lastname+'">'
+            //members+='<h4>'+data.members[x].firstname+" "+data.members[x].lastname+'</h4>';
+            
+        }
+        memberSection.insertAdjacentHTML('afterend',members);
+        // memberSection.insertAdjacentHTML('afterend',members);
 }
 
 }
