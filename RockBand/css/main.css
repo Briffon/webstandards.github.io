@@ -116,6 +116,7 @@ header div h3, div a{
 header div a{
     display: block;
 }
+/* grunge */
 #news::before{
     content:'';
     background:url('../images/grunge.png') no-repeat;
@@ -149,10 +150,41 @@ header div{
 float: right;
 
 }
+
+
 /* News article */
 #news {
     background-color:#EEEEEE;
 }
+
+
+
+.latest{
+    border-left:3px solid #222222;
+    margin-left: 5px;
+    padding-left: 5px;
+    opacity: .5;
+  
+}
+
+#news h2 span::after{
+    content: '';
+    display: block;
+    color: #222222;
+    opacity: 1;
+}
+
+
+#news h2{
+    font-family: program, sans-serif;
+    font-weight: 550;
+    font-style: normal;
+    color:#222222;
+
+}
+
+
+
 #news article {
 	width: calc(25% - 2rem);
 	margin-left: 2rem;
@@ -183,7 +215,6 @@ float: right;
 #about div{
     width: calc(100%*2/4);
     float: left;
-    /* padding: 10px;  */
     padding-right: 20px;
 
 }
@@ -191,13 +222,12 @@ float: right;
 #about ul{
     width:calc(100%*1/3);
     float: right;
-    
 }
 
 #about ul img {
     width: 49%;
-    display: inline-block;
     padding:1%; 
+    display: inline-block;
 }
 
 #about blockquote{
