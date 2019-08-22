@@ -40,21 +40,24 @@ let eventsSection = document.querySelector('#events h4');
 let aboutSection = document.querySelector("#about h3")
 if(aboutSection){
     let about=''
+        about+='<div>'
         about+='<blockquote>'+data.about.quote+'</blockquote>';
         about+='<p>'+data.about.copy+'</p>';
         aboutSection.insertAdjacentHTML('afterend',about);
+        about+='</div>'
 }
 //members
-let memberSection=document.querySelector("#members h1")
+let memberSection=document.querySelector("#about div")
 if(memberSection){
 let members='';
-
+        members+='<ul>'
         for(let x=0;x<data.members.length;x++){
             
             members+='<img src="'+data.members[x].imageURL+'" alt ="'+data.members[x].firstname+' '+data.members[x].lastname+'">'
             //members+='<h4>'+data.members[x].firstname+" "+data.members[x].lastname+'</h4>';
             
         }
+        members+='</ul>'
         memberSection.insertAdjacentHTML('afterend',members);
         // memberSection.insertAdjacentHTML('afterend',members);
 }
