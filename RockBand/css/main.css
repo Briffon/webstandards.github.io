@@ -1,88 +1,109 @@
-/* /* Rock Band CSS
-================================================== 
-================================================== */
-
 @import url('https://fonts.googleapis.com/css?family=Abel|Open+Sans:400,400i');
 
-header,body>section,footer{
-    border:5px solid red;
-    
-}
+/* CSS reset ============================== */
+body, nav, section, header, footer, article, 
+h1, h2, h3, p, a, ul, li, dt, dd, blockquote {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 100%;
+	text-decoration: none;
+	font-weight: inherit;
+	color: inherit;
+	box-sizing: border-box;
+} 
 
+/* Typography ============================== */
 html { font-size: 62.5%; }
-
 body {
-    font-family: 1.4rem/1.6 'program', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-	color: #777777;
-    background: #222222;
+	font: normal 1.6rem/1.25 'Program OT', 'Open Sans', sans-serif;
+	color: #888888;
+	background: #222222;
 }
-
-
-header, section {
-	max-width: 900px;
-	margin: 0 auto;
-}
-
-
-h1, h2 {
+h1, h2, h3 {
 	line-height: 1;
 	font-family: 'Abel', sans-serif;
-	color: #ffffff;
-}		
-
+	text-transform: uppercase;
+}				
 h1 { 
 	font-size: 7rem; 
 	margin: 2rem 0 4rem 0;
 }
 h2 { 
-	font-size: 2.6rem; 	
+	font-size: 2rem;
+	color: #A5A5A5;
 	margin: 2rem 0 1rem 0;
 }
 h3 { 
 	font-size: 1.6rem; 
-	color: #aaaaaa;
+	color: #E5E5E5;
 }
 p {
 	margin-bottom: 2rem;
 }
+blockquote {
+	font-style: italic;
+	color: #a5a5a5;
+}
 img {
 	display: block;
 	width: 100%;
+	min-width: 5rem;
+	min-height: 5rem;
+	background: rgba(255,255,255,.1);
 }
 
 
-header, section {
-	/* border: 6px solid red; */
+/* Structure ============================== */
+header, section, footer {
+	position: relative;
+    padding: 1rem;
 }
-
-
-body > section::after {
+.wrapper, #about, #events {
+	max-width: 900px;
+	margin: 1rem auto;
+	border: 3px solid rgba(255,255,255,.1);
+}
+.wrapper::after {
 	content: '';
 	display: block;
-	clear: left;
+	clear: both;
 }
 body > section:nth-of-type(even) h2 {
 	text-align: right;
 }
-/* Header */
+
+/* Border */
+header,body>section,footer{
+    border:5px solid red;
+    max-width: 900px;
+	margin: 1rem auto;
+}
+
+/* Header=========================*/
+
+/* Background*/
 header{
-   height: 33rem;
-   background-image: url('../images/band.jpg');
-   background-position:center;
-   background-position-x: -8rem;
-  
+    height: 33rem;
+    background-image: url('../images/band.jpg');
+    background-position:center;
+    background-position-x: -15rem;
+    background-position-y: -18rem;
+   
+ }
+/* Rock Band Image */
+ header h1 img{
+    width:10%;
+    margin-top:95px;
+    margin-left:5rem;
 }
-header h1 img{
-    width:20%;
-    margin-top:150px;
-    margin-left:30px;
-}
+
+/* Navigation */
 header nav{
     /* position: relative; */
-    margin-left:32px;
-    margin-top:10px;
+    margin-left:0px;
+    margin-top:-3.5rem;
+    margin-left: 4.5rem;
     
 }
 
@@ -90,43 +111,6 @@ header li {
     padding:3px;
 }
 
-header div{
-    text-align:center;
-    position:absolute;
-    background-color: black;
-    margin-top:70px;
-    padding:20px;
-    z-index: 1;
-    margin-left:550px;
-}
-
-header div h2, div h3, div a{
-    font-family: program, sans-serif;
-    font-weight: 550;
-    font-style: normal;
-    text-transform: uppercase;
-    color: #EEEEEE;
-    opacity: 1;
-}
-
-header div h3, div a{
-    margin-right: 14px;
-}
-
-header div a{
-    display: block;
-}
-/* grunge */
-#news::before{
-    content:'';
-    background:url('../images/grunge.png') no-repeat;
-    display:block;
-    position: absolute;
-    width:25%;
-    height: 10rem;
-    bottom:21rem;
-    left:15rem;
-}
 header li a{
     font-family: program, sans-serif;
     font-weight: 550;
@@ -146,95 +130,130 @@ header li a{
 
 }
 
+/* Latest single */
 header div{
-float: right;
+    position:absolute;
+    background-color: black;
+    margin-left: 65rem;
+    margin-top: -5rem;
+    z-index: 1;
+    width:23%;
+    
 
 }
-
-
-/* News article */
-#news {
-    background-color:#EEEEEE;
-}
-
-
-
-.latest{
-    border-left:3px solid #222222;
-    margin-left: 5px;
-    padding-left: 5px;
-    opacity: .5;
-  
-}
-
-#news h2 span::after{
-    content: '';
+header audio{
+    width: 150px;
     display: block;
-    color: #222222;
+    margin:20px;
+    position: relative;
+    left: 2rem;
+}
+header div h3{
+    font-size: 10px;
+}
+header div h2,div h3, div a{
+    margin-left:5rem;
+
+}
+header div h2, div h3, div a{
+    font-family: program, sans-serif;
+    font-weight: 550;
+    font-style: normal;
+    text-transform: uppercase;
+    color: #EEEEEE;
     opacity: 1;
 }
 
+header div h3, div a{
+    margin-right: 14px;
+}
 
+header div a{
+    display: block;
+}
+
+header div{
+    float: right;
+    
+    }
+
+/* News ============================== */
+
+/* grunge */
+#news::before{
+    background:url('../images/grunge.png') no-repeat;
+    position: absolute;
+	content: '';
+	display: block;
+	width: 60%;
+    height: 10rem;
+    left:25rem;
+}
+/* Border for title */
+#news h2::before{
+    content: '';
+    display: block;
+    width: 2px;
+    height: 40px;
+    background: #222222;
+    opacity: .5;
+    position: absolute;
+    left:10px;
+    top: 3rem;
+}
+
+/* Font */
 #news h2{
     font-family: program, sans-serif;
     font-weight: 550;
     font-style: normal;
     color:#222222;
-
+    margin-left:10px;
 }
 
+#news h2 span{
+    display: block;
+    opacity: .5;
+}
+/* Background */
+#news {
+	background: #EEEEEE;
+}
 
+#news::before {
+	bottom: 100%;
+}
+#news::after {
+	top: 100%;
+}
 
+/* Articles */
 #news article {
+	position: relative;
+	z-index: 1;
 	width: calc(25% - 2rem);
 	margin-left: 2rem;
 	margin-bottom: 2rem;
+	padding: 8rem 5rem 1rem 0;
 	float: left;
-	border: 6px solid blue;
+	border: 2px solid blue;
+	overflow: hidden;
 }
-
 #news article:nth-of-type(1) {
 	width: 50%;
-    margin-left: 0;
+	padding-top: 26.5rem;
+	margin-left: 0;
 }
-
-
-#events article{
-    width: calc(25% - 2rem);
-	margin-left: 2rem;
-	margin-bottom: 2rem;
-	float: top;
-	border: 6px solid purple;
-} 
-/* About section */
-#about {
-    height: 350px;
-    /* background-image: url('../path/to/image.jpg') */
+#news img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	object-fit: cover;
+	z-index: -1;
 }
-
-#about div{
-    width: calc(100%*2/4);
-    float: left;
-    padding-right: 20px;
-
+#news h3, p {
+	background: #222222;
 }
-
-#about ul{
-    width:calc(100%*1/3);
-    float: right;
-}
-
-#about ul img {
-    width: 49%;
-    padding:1%; 
-    display: inline-block;
-}
-
-#about blockquote{
-    font-weight: bold;
-}
-
-/* footer */
-footer {
-    clear: both;
-}
+#news h3 { padding: 1rem 0 0 1rem; }
+#news p { padding: 0 0 .5rem 1rem; }
