@@ -151,11 +151,11 @@ header audio{
 header div h3{
     font-size: 10px;
 }
-header div h2,div h3, div a{
+header div h2,header div h3, header div a{
     margin-left:5rem;
 
 }
-header div h2, div h3, div a{
+header div h2, header div h3, header div a{
     font-family: program, sans-serif;
     font-weight: 550;
     font-style: normal;
@@ -164,17 +164,23 @@ header div h2, div h3, div a{
     opacity: 1;
 }
 
-header div h3, div a{
+header div h3, header div a{
     margin-right: 14px;
-}
-
-header div a{
-    display: block;
 }
 
 header div{
     float: right;
     
+    }
+
+    header div a{
+        font-family: program, sans-serif;
+        font-weight: 550;
+        font-style: normal;
+        font-size:57%;
+        text-transform: uppercase;
+        color: #EEEEEE;
+        background-color: #9B59B6;
     }
 
 /* News ============================== */
@@ -188,6 +194,7 @@ header div{
 	width: 60%;
     height: 10rem;
     left:25rem;
+    z-index: 0;
 }
 /* Border for title */
 #news h2::before{
@@ -202,7 +209,7 @@ header div{
     top: 3rem;
 }
 
-/* Font */
+/* Font for header */
 #news h2{
     font-family: program, sans-serif;
     font-weight: 550;
@@ -252,8 +259,84 @@ header div{
 	object-fit: cover;
 	z-index: -1;
 }
-#news h3, p {
-	background: #222222;
+#news time, h3{
+    font-family: program, sans-serif;
+    font-weight: 550;
+    font-style: normal;
+    text-transform: uppercase;
+    color: #EEEEEE;
+    padding-left: 5px;
 }
-#news h3 { padding: 1rem 0 0 1rem; }
-#news p { padding: 0 0 .5rem 1rem; }
+
+#news h3{
+    padding-bottom: 2px;
+}
+
+#news div {
+    background:rgba(34, 34, 34, 0.7);
+    width:70%;
+    margin-left: 5px;
+
+}
+
+#news article:nth-of-type(1) div{
+    width:40%
+}
+
+#news time{
+    font-size: 50%;
+}
+#news span{
+    opacity: 0.5;
+}
+
+#news article:nth-of-type(1)::after{
+    content: '';
+    display: block;
+    width: calc(100px);
+    height: 2px;
+    background: #EEEEEE;
+    opacity: .5;
+    position: relative;
+    left:5px;
+    top:2px;
+}
+
+#news article::after{
+    content: '';
+    display: block;
+    width: calc(78.455px/2);
+    height: 2px;
+    background: #EEEEEE;
+    opacity: .5;
+    position: relative;
+    left:5px;
+    top:2px;
+}
+
+/* View more button */
+#news a{
+    font-family: program, sans-serif;
+    font-weight: 550;
+    font-style: normal;
+    font-size:57%;
+    text-transform: uppercase;
+    color: #EEEEEE;
+    background-color: #9B59B6;
+    position: relative;
+    right:43rem;
+}
+
+/* Grunge */
+#events::before{
+    content: "";
+    background:url('../images/grunge2.png') no-repeat;
+    position: absolute;
+	content: '';
+	display: block;
+	width: 60%;
+    height: 9.5rem;
+    left:2rem;
+    bottom: 63rem;
+    
+}
