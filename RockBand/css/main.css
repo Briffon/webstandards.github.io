@@ -37,7 +37,7 @@ h2 {
 h3 { 
 	font-size: 1.6rem; 
 	color: #E5E5E5;
-}
+} 
 p {
 	margin-bottom: 2rem;
 }
@@ -259,7 +259,7 @@ header div{
 	object-fit: cover;
 	z-index: -1;
 }
-#news time, h3{
+#news time, #news h3{
     font-family: program, sans-serif;
     font-weight: 550;
     font-style: normal;
@@ -319,7 +319,7 @@ header div{
     font-family: program, sans-serif;
     font-weight: 550;
     font-style: normal;
-    font-size:57%;
+    font-size:77%;
     text-transform: uppercase;
     color: #EEEEEE;
     background-color: #9B59B6;
@@ -328,7 +328,7 @@ header div{
 }
 
 /* Grunge */
-#events::before{
+/* #events::before{
     content: "";
     background:url('../images/grunge2.png') no-repeat;
     position: absolute;
@@ -337,6 +337,142 @@ header div{
 	width: 60%;
     height: 9.5rem;
     left:2rem;
-    bottom: 63rem;
+    bottom: 83rem;
     
+} */
+
+/* Events Section */
+#events{
+    background-image: url('../images/bw.jpg');
+    background-repeat: no-repeat;
+
+}
+
+#events h2{
+    font-family: program, sans-serif;
+    font-weight: 1000;
+    font-style: normal;
+    color:#EEEEEE;
+    margin-right: 40px;
+}
+
+#events div{
+    background-color: #9B59B6;
+    width: 10%;
+    position: relative;
+    left: 20rem;
+    top: 2.5rem;
+    font-family: program, sans-serif;
+    font-style: normal;
+    color:#EEEEEE;
+    margin-right: 40px;
+    text-transform: uppercase;
+}
+#events div h4{
+font-weight: 700;
+}
+
+#events li{
+    background: rgba(0,0,0,.2);
+	border: 2px solid green;
+	margin-bottom: 1rem;
+    padding: 1rem;
+    width: 60%;
+    height: 6rem;
+}
+
+.location{
+content: url(../images/location.png);
+width: 2%;
+position: relative;
+bottom: 12.7rem;
+left: 40rem;
+}
+
+.ticket{
+    content: url(../images/ticket.png);
+    width: 10%;
+    position: relative;
+bottom: 17.7rem;
+left: 45rem;
+
+}
+#events h2 span{
+    display: block;
+    opacity: .5;
+}
+
+#events h2::before{
+    content: '';
+    display: block;
+    width: 2px;
+    height: 40px;
+    background: #888888;
+    opacity: .5;
+    position: absolute;
+    left:84.8rem;
+    top: 2.8rem;
+}
+
+#events ul{
+position: relative;
+left: 32rem;
+bottom: 2rem;
+}
+
+#events time{
+margin-bottom: 10px;
+}
+
+#events time span{
+    display: block;
+}
+
+#events li h4{
+    font-family: program, sans-serif;
+    font-weight: 1000;
+    font-style: bold;
+    color: #EEEEEE;
+    text-transform: uppercase;
+}
+
+#venue{
+    font-family: program, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    color: #EEEEEE;
+    text-transform: uppercase;
+}
+
+#venue, #events li h4{
+position: relative;
+bottom:6rem;
+left:8rem;
+}
+
+#months{
+    font-family: program, sans-serif;
+    font-weight: 1;
+    font-style: normal;
+    color: #EEEEEE;
+}
+
+#num{
+    font-family: program, sans-serif;
+    font-weight: 900;
+    font-style: bold;
+    color: #EEEEEE;
+}
+
+#events a {
+    font-family: program, sans-serif;
+    font-weight: 550;
+    font-style: normal;
+    font-size:87%;
+    text-transform: uppercase;
+    color: #EEEEEE;
+    background-color: #9B59B6;
+    position: relative;
+    bottom: 2rem;
+    left: 32rem;
 }

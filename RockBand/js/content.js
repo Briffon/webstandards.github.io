@@ -22,18 +22,22 @@ if(newsArticles){
 }
 
 //events
-let eventsSection = document.querySelector('#events h4');
+let eventsSection = document.querySelector('#events div');
 	if(eventsSection){
 		
         let events = '';
         let months=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']
+        events += '<ul>';
 		for(x= 0; x < data.events.length; x++){
-			events += '<article>';
-            events += '<p><time datetime="' + data.events[x].date + '">' + new Date(data.events[x].date).getDate() +" "+ months[new Date(data.events[x].date).getMonth()] + '</time></p>';
-            events += '<p>'+data.events[x].venue+'</p>';
-            events += '<h3>' + data.events[x].city + ', ' + data.events[x].state + '</h3>';
-			events += '</article>';
+            events+='<li>'
+            events += '<p><time datetime="' + data.events[x].date + '">' + '<span id="num">'+new Date(data.events[x].date).getDate()+'</span>'+" "+'<span id="months">'+ months[new Date(data.events[x].date).getMonth()]+'</span>' + '</time></p>';
+            events += '<h4>' + data.events[x].city + ', ' + data.events[x].state + '</h4>';
+            events += '<p id="venue">'+data.events[x].venue+'</p>';
+            events+='<img class = "location" src="" alt="location">';
+            events+='<img class="ticket" src="" alt="ticket">';
+            event+='</li>'
 		}
+        events += '</ul>';
         eventsSection.insertAdjacentHTML('afterend',events);
     }
 //about 
