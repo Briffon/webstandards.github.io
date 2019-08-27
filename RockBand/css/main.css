@@ -62,7 +62,6 @@ header, section, footer {
 .wrapper, #about, #events {
 	max-width: 900px;
 	margin: 1rem auto;
-	border: 3px solid rgba(255,255,255,.1);
 }
 .wrapper::after {
 	content: '';
@@ -75,7 +74,6 @@ body > section:nth-of-type(even) h2 {
 
 /* Border */
 header,body>section,footer{
-    border:5px solid red;
     max-width: 900px;
 	margin: 1rem auto;
 }
@@ -91,8 +89,10 @@ header{
     background-position-y: -18rem;
    
  }
+
 /* Rock Band Image */
  header h1 img{
+    background: rgba(0,0,0,0);
     width:10%;
     margin-top:95px;
     margin-left:5rem;
@@ -171,13 +171,13 @@ header div h3, header div a{
 header div{
     float: right;
     
-    }
+}
 
-    header div a{
+header div a{
         font-family: program, sans-serif;
         font-weight: 550;
         font-style: normal;
-        font-size:57%;
+        font-size:87%;
         text-transform: uppercase;
         color: #EEEEEE;
         background-color: #9B59B6;
@@ -196,6 +196,7 @@ header div{
     left:25rem;
     z-index: 0;
 }
+
 /* Border for title */
 #news h2::before{
     content: '';
@@ -243,7 +244,6 @@ header div{
 	margin-bottom: 2rem;
 	padding: 8rem 5rem 1rem 0;
 	float: left;
-	border: 2px solid blue;
 	overflow: hidden;
 }
 #news article:nth-of-type(1) {
@@ -327,19 +327,6 @@ header div{
     right:43rem;
 }
 
-/* Grunge */
-/* #events::before{
-    content: "";
-    background:url('../images/grunge2.png') no-repeat;
-    position: absolute;
-	content: '';
-	display: block;
-	width: 60%;
-    height: 9.5rem;
-    left:2rem;
-    bottom: 83rem;
-    
-} */
 
 /* Events Section */
 #events{
@@ -372,9 +359,12 @@ header div{
 font-weight: 700;
 }
 
+#events h3, #events h4{
+    margin-left: 1rem;
+}
+
 #events li{
     background: rgba(0,0,0,.2);
-	border: 2px solid green;
 	margin-bottom: 1rem;
     padding: 1rem;
     width: 60%;
@@ -382,21 +372,23 @@ font-weight: 700;
 }
 
 .location{
-content: url(../images/location.png);
-width: 2%;
-position: relative;
-bottom: 12.7rem;
-left: 40rem;
+    content: url(../images/location.png);
+    width: 2%;
+    position: relative;
+    bottom: 12.7rem;
+    left: 40rem;
+    background: rgba(0,0,0,0);
 }
 
 .ticket{
     content: url(../images/ticket.png);
     width: 10%;
     position: relative;
-bottom: 17.7rem;
-left: 45rem;
-
+    bottom: 17.7rem;
+    left: 45rem;
+    background: rgba(0,0,0,0);
 }
+
 #events h2 span{
     display: block;
     opacity: .5;
@@ -410,7 +402,7 @@ left: 45rem;
     background: #888888;
     opacity: .5;
     position: absolute;
-    left:84.8rem;
+    left:85.5rem;
     top: 2.8rem;
 }
 
@@ -475,4 +467,127 @@ left:8rem;
     position: relative;
     bottom: 2rem;
     left: 32rem;
+}
+
+/* About */
+#about{
+    background: #222222;
+    height:53rem;
+}
+#about h2, #about p, #about blockquote{
+    margin-left: 40px;
+}
+#about h2{
+    font-family: program, sans-serif;
+    font-weight: 1000;
+    font-style: normal;
+    color:#EEEEEE;
+    letter-spacing: 2px;
+}
+
+#about h2 span{
+    display: block;
+    opacity: .5;
+    letter-spacing: 0px;
+}
+
+#about h2::before{
+    content: '';
+    display: block;
+    width: 2px;
+    height: 40px;
+    background: #888888;
+    opacity: .5;
+    position: absolute;
+    left:42px;
+    top: 2.8rem;
+}
+
+#info{
+    width: calc(100%*2/4);
+}
+
+#about ul{
+    width: calc(100%*1/3);
+    float:right;
+    position: relative;
+    bottom: 27.5rem;
+    right: 7rem;
+
+}
+
+#about ul img{
+    display: inline-block;
+    width: 50%;
+
+}
+
+#footer::before{
+    background:url('../images/nycity.png') no-repeat;
+    position: absolute;
+	content: '';
+	display: block;
+	width: 70%;
+    left:2rem;
+    z-index: 0;
+    height: 30rem;
+    bottom: 3rem;
+}
+
+#footer{
+    background: #E5E5E5;
+    text-align: center;
+}
+
+#footer li{
+    display: inline-block;
+    list-style: none;
+}
+
+#footer li a{
+    display: block;
+    text-indent: -9999999999px;
+    width: 3rem;
+    height: 3rem;
+    background-image: url(../images/social.png)
+}
+
+#footer li a[href*='twitter']{
+    background-position-x: -30px;
+    background-position-y: 30px;
+}
+
+#footer li a[href*='youtube']{
+    background-position-x: -60px;
+}
+
+#footer li a[href*='google']{
+    background-position-x: -90px;
+}
+
+#footer li a[href*='instagram']{
+    background-position-x: -120px;
+}
+
+#newsletter{
+    margin-right: 190px;
+}
+
+#contact{
+    margin-right: -190px;
+}
+
+#footer p{
+    position: relative;
+    font-family: program, sans-serif;
+    font-weight: 1000;
+    font-style: normal;
+    color:#9B59B6;
+    top: 2rem;
+}
+
+#footer ul{
+    position: relative;
+    left: 110px;
+    bottom: 25px;
 }

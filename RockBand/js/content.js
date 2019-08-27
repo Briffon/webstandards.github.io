@@ -41,12 +41,12 @@ let eventsSection = document.querySelector('#events div');
         eventsSection.insertAdjacentHTML('afterend',events);
     }
 //about 
-let aboutSection = document.querySelector("#about h3")
+let aboutSection = document.querySelector("#about h2")
 if(aboutSection){
     let about=''
-        about+='<div>'
-        about+='<blockquote>'+data.about.quote+'</blockquote>';
+        about+='<div id="info">'
         about+='<p>'+data.about.copy+'</p>';
+        about+='<blockquote>'+data.about.quote+'</blockquote>';
         aboutSection.insertAdjacentHTML('afterend',about);
         about+='</div>'
 }
@@ -56,7 +56,6 @@ if(memberSection){
 let members='';
         members+='<ul>'
         for(let x=0;x<data.members.length;x++){
-            
             members+='<img src="'+data.members[x].imageURL+'" alt ="'+data.members[x].firstname+' '+data.members[x].lastname+'">'
             //members+='<h4>'+data.members[x].firstname+" "+data.members[x].lastname+'</h4>';
             
