@@ -22,7 +22,7 @@ body {
 	background: #E5E5E5;
 }
 
-h1, h2, h3 {
+h1, h2 {
 	line-height: 1;
 	font-family: 'Abel', sans-serif;
 	text-transform: uppercase;
@@ -44,10 +44,6 @@ h3 {
 	color: #E5E5E5;
 } 
 
-p {
-	margin-bottom: 2rem;
-}
-
 blockquote {
 	font-style: italic;
 	color: #a5a5a5;
@@ -67,7 +63,7 @@ header, section, footer {
 	position: relative;
     padding: 1rem;
 }
-.wrapper, #about, #events {
+.wrapper, #info {
 	max-width: 900px;
 	margin: 1rem auto;
 }
@@ -127,8 +123,169 @@ header li a{
     
 }
 
-ul{
+#info h2{
+	color: black;
+    font-family: program, sans-serif;
+	font-style: normal;
+	font-size: 30px;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+
+#info ul{
     color: black;
     font-family: program, sans-serif;
+	font-style: normal;
+	float: left;
+}
+
+#info li{
+	display: inline-block;
+	margin: 1rem;
+}
+
+#info h3, #info p{
+padding: 2px;
+}
+
+#info h3{
+	color: black;
+    font-family: program, sans-serif;
+	font-style: normal;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+#map img{
+	content: url("https://www.tripsavvy.com/thmb/_IxJWUzEJON2Qgb4oktvzK5dyg4=/800x634/filters:fill(auto,1)/map-skyharborairport_800-576b400f5f9b585875951a25.jpg");
+	width: 500px;
+}
+
+#form{
+	width: 20%;
+	position: absolute;
+	left: 106rem;
+	bottom: 30rem;
+}
+
+#form h2{
+	color: black;
+    font-family: program, sans-serif;
+	font-style: normal;
+	font-size: 30px;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+
+#form fieldset label{
+	color: black;
+    font-family: program, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	opacity: .5;
+}
+
+#form fieldset{
+	padding: 15px;
+
+}
+
+#femail::after,#name::after{
+	content: '';
+	background: black;
+	width:50rem;
+	height: 2px;
+	display: block;
+	margin-top: 2rem;
+}
+
+#message::after{
+	content: '';
+	background: black;
+	width:50rem;
+	height: 2px;
+	display: block;
+	margin-top: 10rem;
+}
+
+#form fieldset,#form input{
+	border: rgba(0,0,0,0)
+}
+
+#form input{
+	background: rgba(0,0,0,0)
+
+}
+
+#form button{
+	margin-left: 16px;
+	background-color: black;
+	color: #E5E5E5;
+    font-family: program, sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	text-transform: uppercase;
+	border: none;
+	padding: 5px 5px;
+}
+
+#footer{
+    background: #E5E5E5;
+	text-align: center;
+	margin-left: 45rem;
+	margin-top: 5rem;
+}
+
+#footer li{
+    display: inline-block;
+    list-style: none;
+}
+
+#footer li a{
+    display: block;
+    text-indent: -9999999999px;
+    width: 3rem;
+    height: 3rem;
+    background-image: url(../images/social.png)
+}
+
+#footer li a[href*='twitter']{
+    background-position-x: -30px;
+    background-position-y: 30px;
+}
+
+#footer li a[href*='youtube']{
+    background-position-x: -60px;
+}
+
+#footer li a[href*='google']{
+    background-position-x: -90px;
+}
+
+#footer li a[href*='instagram']{
+    background-position-x: -120px;
+}
+
+#newsletter{
+    margin-right: 190px;
+}
+
+#contact{
+    margin-right: -190px;
+}
+
+#footer p{
+    position: relative;
+    font-family: program, sans-serif;
+    font-weight: 1000;
     font-style: normal;
+    color:#9B59B6;
+    top: 2rem;
+}
+
+#footer ul{
+    position: relative;
+    left: 108px;
+    bottom: 9px;
 }

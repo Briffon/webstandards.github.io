@@ -24,62 +24,77 @@
         </header>
 
         <!--Contact Information-->
-        <ul>
+<section id="info">
+    <h2>Deatils</h2>
+    <ul>
 
-            <li id="phone">
-                <h2>Contact Us</h2>
-                <dl>
-                    <dt>Phone</dt>
-                    <dd>453-567-8368</dd>
-                    <dt>Email</dt>
-                    <dd>RockBand@gmail.com</dd>
-                </dl>
-            </li>
+        <li id="phone">
+            <h3>Contact Us</h3>
+            <p>Phone</p>
+            <p>453-567-8368</p>
+        </li>
 
-            <li id="find">
-                <h2>Where to find us</h2>
-                <dl>
-                    <dt>Location</dt>
-                    <dd>Phoenix, Arizona</dd>
-                </dl>
-            </li>
-
-            <li id="remail">
-                <h2>E-Mail</h2>
-                <p>RockBand@gmail.com</p>
-            </li>
+        <li id="find">
+            <h3>Where to find us</h3>
+            <p>Location</p>
+            <p>Phoenix, Arizona</p>
+        </li>
+        
+        <li id="remail">
+            <h3>E-Mail</h3>
+            <p>RockBand@gmail.com</p>
+            <p>BandRock@gmail.com</p>
+        </li>
+       
 
         </ul>
+    </section>
 
         <!--Map-->
-        <img src="" alt="Company Location">
+        <section id="map">
+            <img src="Map" alt="Company Location">
+        </section>
 
-
-        <form action="#" method="post">
-            <h3>Contact Us</h3>
-            <fieldset>
-
+<section id="form">
+    <form action="#" method="post">
+        <h2>Contact Us</h2>
+        <fieldset id="name">
             <!--name-->
-                <p>
-                    <label for="name">Name</label>
-                    <input type="text" name="name" id="name" placeholder="Name">
-                </p>
-            </fieldset>
-
-            <fieldset>
+            <p>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name">
+            </p>
+        </fieldset>
+        
+        <fieldset id="femail">
             <!--Email-->
                 <p>
                     <label for="email">Email</label>
-                    <input type="email" name="email" id="email" placeholder="Email">
+                    <input type="email" name="email" id="email">
+                </p>
+            </fieldset>
+            
+            <fieldset id="message">
+                <!--Message-->
+                <p>
+                    <label for="msg">Message</label>
+                    <input type="text" name="msg" id="msg">
                 </p>
             </fieldset>
 
-            <fieldset>
-            <!--Message-->
-                <p>
-                    <label for="msg">Message</label>
-                    <input type="text" name="msg" id="msg" placeholder="Message">
-                </p>
-            </fieldset>
+            <button type="submit">submit</button>
         </form>
+    </section>
+
+        <footer id="footer">
+                <p><a id ="newsletter" href="news.html">NewsLetter</a> <a id="contact" href="contact.html"> Contact</a></p>
+                <ul>
+                    <li><a href="https://www.facebook.com/">Facebook</a></li>
+                    <li><a href="https://twitter.com">Twitter</a></li>
+                    <li><a href="https://www.youtube.com/">Youtube</a></li>
+                    <li><a href="https://www.google.com/">Youtube</a></li>
+                    <li><a href="https://www.instagram.com/">Instagram</a></li>
+                </ul>
+            </footer>
+            <script src="js/content.js"></script>
     </body>
