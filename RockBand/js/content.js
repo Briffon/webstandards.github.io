@@ -32,7 +32,7 @@ let eventsSection = document.querySelector('#events div');
             events+='<li>'
             events += '<p><time datetime="' + data.events[x].date + '">' + '<span id="num">'+new Date(data.events[x].date).getDate()+'</span>'+" "+'<span id="months">'+ months[new Date(data.events[x].date).getMonth()]+'</span>' + '</time></p>';
             events += '<h4>' + data.events[x].city + ', ' + data.events[x].state + '</h4>';
-            events += '<p id="venue">'+data.events[x].venue+'</p>';
+            events += '<p class="venue">'+data.events[x].venue+'</p>';
             events+='<img class = "location" src="" alt="location">';
             events+='<img class="ticket" src="" alt="ticket">';
             event+='</li>'
