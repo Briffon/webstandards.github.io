@@ -41,7 +41,7 @@ h2 {
 
 h3 { 
 	font-size: 1.6rem; 
-	color: #E5E5E5;
+	/* color: #E5E5E5; */
 } 
 
 blockquote {
@@ -63,7 +63,7 @@ header, section, footer {
 	position: relative;
     padding: 1rem;
 }
-.wrapper, #info {
+.wrapper, section,footer {
 	max-width: 900px;
 	margin: 1rem auto;
 }
@@ -108,7 +108,7 @@ header h1 a{
     font-family: program, sans-serif;
     font-weight: 700;
     font-style: normal;
-    color: #eeeeee;
+    color: #E5E5E5;
 }
 
 header li a{
@@ -123,118 +123,88 @@ header li a{
     
 }
 
-#info h2{
-	color: black;
+header h2{
     font-family: program, sans-serif;
-	font-style: normal;
-	font-size: 30px;
-	font-weight: 700;
-	letter-spacing: 1px;
+    font-weight: 700;
+    font-style: normal;
+    color:black;
+    font-size: 50px;
 }
 
-#info ul{
-    color: black;
+section h2{
     font-family: program, sans-serif;
-	font-style: normal;
-	float: left;
+    font-weight: 700;
+    font-style: normal;
+    color:black; 
+    text-align: center;
+    font-size: 5rem;
 }
 
-#info li{
-	display: inline-block;
-	margin: 1rem;
-}
-
-#info h3, #info p{
-padding: 2px;
-}
-
-#info h3{
-	color: black;
+article{
     font-family: program, sans-serif;
-	font-style: normal;
-	font-size: 20px;
-	font-weight: 700;
+    background: rgba(0,0,0,.2);
+    margin: 1rem;
+    height: 12rem;
 }
 
-#map img{
-	content: url("https://www.tripsavvy.com/thmb/_IxJWUzEJON2Qgb4oktvzK5dyg4=/800x634/filters:fill(auto,1)/map-skyharborairport_800-576b400f5f9b585875951a25.jpg");
-	width: 500px;
+time span::after{
+    content: '';
+    display: block;
 }
 
-#form{
-	width: 20%;
-	position: absolute;
-	left: 106rem;
-	bottom: 30rem;
+article h3,article p{
+    margin-left: 10rem;
+    color:black;
+    position: relative;
+    bottom: 2rem;
 }
 
-#form h2{
-	color: black;
-    font-family: program, sans-serif;
-	font-style: normal;
-	font-size: 30px;
-	font-weight: 700;
-	letter-spacing: 1px;
+article h3{
+    padding-bottom: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-#form fieldset label{
-	color: black;
-    font-family: program, sans-serif;
-	font-style: normal;
-	font-weight: 400;
-	font-size: 20px;
-	opacity: .5;
+article time{
+position: relative;
+top: 3.5rem;
+left: 4rem;
+font-family: program, sans-serif;
+font-weight: 700;
+font-style: normal;
+color:black;
 }
 
-#form fieldset{
-	padding: 15px;
-
+article span{
+    position: relative;
+    font-size: 2rem;
+    right: 8px;
 }
 
-#femail::after,#name::after{
-	content: '';
-	background: black;
-	width:50rem;
-	height: 2px;
-	display: block;
-	margin-top: 2rem;
-}
-
-#message::after{
-	content: '';
-	background: black;
-	width:50rem;
-	height: 2px;
-	display: block;
-	margin-top: 10rem;
-}
-
-#form fieldset,#form input{
-	border: rgba(0,0,0,0)
-}
-
-#form input{
-	background: rgba(0,0,0,0)
+.location{
+    content: url(../images/location.png);
+    width: 7%;
+    position: relative;
+    background: rgba(0,0,0,0);
+    left: 60rem;
+    bottom: 7rem;
 
 }
 
-#form button{
-	margin-left: 16px;
-	background-color: black;
-	color: #E5E5E5;
-    font-family: program, sans-serif;
-	font-style: normal;
-	font-weight: 700;
-	text-transform: uppercase;
-	border: none;
-	padding: 5px 5px;
+.tickets{
+    content: url(../images/ticket.png);
+    width: 7%;
+    position: relative;
+    background: rgba(0,0,0,0);
+    left: 62rem;
+    bottom: 7rem;
 }
 
 #footer{
     background: #E5E5E5;
-	text-align: center;
-	margin-left: 45rem;
-	margin-top: 5rem;
+    text-align: center;
+    margin-right: 65rem;
 }
 
 #footer li{
@@ -286,6 +256,6 @@ padding: 2px;
 
 #footer ul{
     position: relative;
-    left: 108px;
-    bottom: 9px;
+    left: 105px;
+    bottom: 10px;
 }

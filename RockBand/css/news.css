@@ -41,7 +41,7 @@ h2 {
 
 h3 { 
 	font-size: 1.6rem; 
-	color: #E5E5E5;
+	/* color: #E5E5E5; */
 } 
 
 blockquote {
@@ -63,7 +63,7 @@ header, section, footer {
 	position: relative;
     padding: 1rem;
 }
-.wrapper, #info {
+.wrapper, section, footer {
 	max-width: 900px;
 	margin: 1rem auto;
 }
@@ -108,7 +108,7 @@ header h1 a{
     font-family: program, sans-serif;
     font-weight: 700;
     font-style: normal;
-    color: #eeeeee;
+    color: #E5E5E5;
 }
 
 header li a{
@@ -123,118 +123,88 @@ header li a{
     
 }
 
-#info h2{
-	color: black;
+h2{
     font-family: program, sans-serif;
-	font-style: normal;
-	font-size: 30px;
-	font-weight: 700;
-	letter-spacing: 1px;
+    font-weight: 700;
+    font-style: normal;
+    color:black;
+    font-size: 50px;
 }
 
-#info ul{
-    color: black;
-    font-family: program, sans-serif;
-	font-style: normal;
+article{
+    position: relative;
+	z-index: 1;
+	width: calc(25% - 2rem);
+	margin-left: 2rem;
+	margin-bottom: 2rem;
+	padding: 8rem 5rem 1rem 0;
 	float: left;
-}
-
-#info li{
-	display: inline-block;
-	margin: 1rem;
-}
-
-#info h3, #info p{
-padding: 2px;
-}
-
-#info h3{
-	color: black;
+    overflow: hidden;
+    left: 2rem;
+    bottom: 25rem;
     font-family: program, sans-serif;
-	font-style: normal;
-	font-size: 20px;
-	font-weight: 700;
+    font-style: normal;
+    color:black;
 }
 
-#map img{
-	content: url("https://www.tripsavvy.com/thmb/_IxJWUzEJON2Qgb4oktvzK5dyg4=/800x634/filters:fill(auto,1)/map-skyharborairport_800-576b400f5f9b585875951a25.jpg");
-	width: 500px;
+div time::after{
+content: '';
+display: block;
 }
 
-#form{
-	width: 20%;
-	position: absolute;
-	left: 106rem;
-	bottom: 30rem;
+div img{
+    width: 50%;
 }
 
-#form h2{
-	color: black;
+div {
     font-family: program, sans-serif;
-	font-style: normal;
-	font-size: 30px;
-	font-weight: 700;
-	letter-spacing: 1px;
+    font-style: normal;
+    color:black;
 }
 
-#form fieldset label{
-	color: black;
-    font-family: program, sans-serif;
-	font-style: normal;
-	font-weight: 400;
-	font-size: 20px;
-	opacity: .5;
+div p{
+    width: 50%;
 }
 
-#form fieldset{
-	padding: 15px;
+div h3, div p, div time, div a{
+    width: 40%;
+    position: relative;
+    left: 50rem;
+    bottom: 25rem;
 
 }
 
-#femail::after,#name::after{
-	content: '';
-	background: black;
-	width:50rem;
-	height: 2px;
-	display: block;
-	margin-top: 2rem;
+div h3{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 30px;
 }
 
-#message::after{
-	content: '';
-	background: black;
-	width:50rem;
-	height: 2px;
-	display: block;
-	margin-top: 10rem;
+div p, div time{
+  opacity: .5;  
 }
 
-#form fieldset,#form input{
-	border: rgba(0,0,0,0)
+div a{
+    margin-top: 50px;
+    background:#E5E5E5;
+    border-style: solid;
+    border-color: black;
+    padding: 1px;
 }
 
-#form input{
-	background: rgba(0,0,0,0)
-
+article h3{
+font-weight: 600;
 }
 
-#form button{
-	margin-left: 16px;
-	background-color: black;
-	color: #E5E5E5;
-    font-family: program, sans-serif;
-	font-style: normal;
-	font-weight: 700;
-	text-transform: uppercase;
-	border: none;
-	padding: 5px 5px;
+article time{
+    opacity: .5;
 }
 
 #footer{
     background: #E5E5E5;
-	text-align: center;
-	margin-left: 45rem;
-	margin-top: 5rem;
+    text-align: center;
+    position: relative;
+    right: 7rem;
 }
 
 #footer li{
@@ -267,14 +237,13 @@ padding: 2px;
     background-position-x: -120px;
 }
 
-#newsletter{
-    margin-right: 190px;
-}
 
-#contact{
-    margin-right: -190px;
+#newsletter, #contact{
+margin: 0 auto;
+padding: 10rem;
+position: relative;
+right: 20rem;
 }
-
 #footer p{
     position: relative;
     font-family: program, sans-serif;
@@ -286,6 +255,6 @@ padding: 2px;
 
 #footer ul{
     position: relative;
-    left: 108px;
-    bottom: 9px;
+    left: 80px;
+    bottom: 5px;
 }

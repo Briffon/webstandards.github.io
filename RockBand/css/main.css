@@ -126,7 +126,7 @@ header li {
 
 header li a{
     font-family: program, sans-serif;
-    font-weight: 550;
+    font-weight: 500;
     font-style: normal;
     color:#EEEEEE;
     opacity: 0.5;
@@ -183,7 +183,7 @@ header div h2,header div h3, header div a{
 }
 header div h2, header div h3, header div a{
     font-family: program, sans-serif;
-    font-weight: 550;
+    font-weight: 500;
     font-style: normal;
     text-transform: uppercase;
     color: #EEEEEE;
@@ -201,7 +201,7 @@ header div{
 
 header div a{
         font-family: program, sans-serif;
-        font-weight: 550;
+        font-weight: 500;
         font-style: normal;
         font-size:87%;
         text-transform: uppercase;
@@ -241,7 +241,7 @@ header div a{
 /* Font for header */
 #news h2{
     font-family: program, sans-serif;
-    font-weight: 550;
+    font-weight: 500;
     font-style: normal;
     color:#222222;
     margin-left:30px;
@@ -276,7 +276,6 @@ header div a{
 	float: left;
     overflow: hidden;
     left: 2rem;
-   
 }
 
 #news article:nth-of-type(1) {
@@ -296,7 +295,7 @@ header div a{
 
 #news time, #news h3{
     font-family: program, sans-serif;
-    font-weight: 550;
+    font-weight: 500;
     font-style: normal;
     text-transform: uppercase;
     color: #EEEEEE;
@@ -353,7 +352,7 @@ header div a{
 /* View more button */
 #news a{
     font-family: program, sans-serif;
-    font-weight: 550;
+    font-weight:500;
     font-style: normal;
     font-size:77%;
     text-transform: uppercase;
@@ -373,7 +372,7 @@ header div a{
 
 #events h2{
     font-family: program, sans-serif;
-    font-weight: 1000;
+    font-weight: 700;
     font-style: normal;
     color:#EEEEEE;
     margin-right: 40px;
@@ -483,8 +482,8 @@ margin-bottom: 10px;
 
 #events li h4{
     font-family: program, sans-serif;
-    font-weight: 1000;
-    font-style: bold;
+    font-weight: 700;
+    font-style: normal;
     color: #EEEEEE;
     text-transform: uppercase;
 }
@@ -505,7 +504,7 @@ left:8rem;
 
 #months{
     font-family: program, sans-serif;
-    font-weight: 1;
+    font-weight: 100;
     font-style: normal;
     color: #EEEEEE;
 }
@@ -513,13 +512,13 @@ left:8rem;
 #num{
     font-family: program, sans-serif;
     font-weight: 900;
-    font-style: bold;
+    font-style: normal;
     color: #EEEEEE;
 }
 
 #events a {
     font-family: program, sans-serif;
-    font-weight: 550;
+    font-weight: 500;
     font-style: normal;
     font-size:87%;
     text-transform: uppercase;
@@ -552,7 +551,7 @@ left:8rem;
 
 #about h2{
     font-family: program, sans-serif;
-    font-weight: 1000;
+    font-weight: 700;
     font-style: normal;
     color:#EEEEEE;
     letter-spacing: 2px;
@@ -654,7 +653,7 @@ left:8rem;
 #footer p{
     position: relative;
     font-family: program, sans-serif;
-    font-weight: 1000;
+    font-weight: 700;
     font-style: normal;
     color:#9B59B6;
     top: 2rem;
