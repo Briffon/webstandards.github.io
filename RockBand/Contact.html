@@ -52,17 +52,17 @@
 
         <!--Map-->
         <section id="map">
-            <img src="Map" alt="Company Location">
+            <img src="" alt="Company Location">
         </section>
 
 <section id="form">
     <form action="#" method="post">
         <h2>Contact Us</h2>
-        <fieldset id="name">
+        <fieldset id="nme">
             <!--name-->
             <p>
                 <label for="name">Name</label>
-                <input type="text" name="name" id="name">
+                <input class="required" type="text" name="name" id="name">
             </p>
         </fieldset>
         
@@ -70,7 +70,7 @@
             <!--Email-->
                 <p>
                     <label for="email">Email</label>
-                    <input type="email" name="email" id="email">
+                    <input  class="required" type="email" name="email" id="email">
                 </p>
             </fieldset>
             
@@ -78,11 +78,11 @@
                 <!--Message-->
                 <p>
                     <label for="msg">Message</label>
-                    <input type="text" name="msg" id="msg">
+                    <input  class="required" type="text" name="msg" id="msg">
                 </p>
             </fieldset>
 
-            <button type="submit">submit</button>
+            <button type="submit" class="disabled">submit</button>
         </form>
     </section>
 
@@ -96,5 +96,7 @@
                     <li><a href="https://www.instagram.com/">Instagram</a></li>
                 </ul>
             </footer>
-            <script src="js/content.js"></script>
+
+            
+            <script src="js/events.js"></script>
     </body>

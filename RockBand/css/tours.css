@@ -259,3 +259,12 @@ article span{
     left: 105px;
     bottom: 10px;
 }
+
+.button{
+    position: relative;
+	background:#9B59B6;
+	color: white;
+	padding: .5rem 4rem .5rem 1rem;
+    clip-path: polygon(0 0, 100% 0, 65% 100%, 0% 100%);
+    left:52rem;
+}

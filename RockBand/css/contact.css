@@ -289,3 +289,15 @@ padding: 2px;
     left: 108px;
     bottom: 9px;
 }
+
+label.error {
+	display: block;
+	position: relative;
+	text-transform: capitalize;
+	color: #f1c40f;
+}
+
+.disabled{
+	cursor: not-allowed;
+	opacity: 0.15
+}
